@@ -1,0 +1,123 @@
+/* Muhammad Muneeeb
+Assiginment 9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body
+{
+  /* Picture was found on google pictures */
+  background-image: url('../img/scrabble/SpaceBackground1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+/* To make background spread across the page */
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: "Advent Pro";
+}
+
+/*
+padding for better display
+*/
+body > .container
+{
+  padding: 70px 10px 0;
+}
+
+body > .row
+{
+  margin: 10px;
+}
+
+html
+{
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.center_text_images {
+  margin: auto;
+  text-align: center;
+}
+
+
+.resize_board
+{
+  height: 125px;
+  width: auto;
+}
+
+.resize_rack
+{
+  height: 125px;
+  width: 1200px;
+}
+
+.pieces
+{
+  height: 100px;
+  width: 100px;
+}
+
+.droppable
+{
+  height: 125px;
+  width: 118px;
+}
+
+.about
+{
+  color: white;
+  text-align: center;
+}
+
+.center_text
+{
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.center_text_nohighlight
+{
+  color: black;
+  font-size: 200%;
+  text-align: center;
+}
+
+.center_text_small
+{
+  color: #eff302;
+  font-family: "Advent Pro";
+  font-size: 120%;
+  font-weight: 900;
+  text-align: center;
+}
+
+h1.name
+{
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 750%;
+  text-align: center;
+}
+
+.highlight_centered
+{
+  background-color: #CD8500;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 300%;
+  font-weight: 900;
+  text-align: center;
+}

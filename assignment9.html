@@ -1,0 +1,102 @@
+
+<!--
+  Muhammad Muneeb
+  Assiginment 9
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <!--  Configuration -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Website title -->
+  <title> SCRABBLE </title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+  <!--  Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Override stuff form css file -->
+  <link rel="stylesheet" href="css/scrabbles.css">
+</head>
+<body>
+  <div id="NavBarHeader"></div>
+    <!-- first row  -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="name">
+          <span class="highlight_fun">SCRABBLE </span>
+        </h1>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+      <div class="col-md-4"></div>
+    </div>
+    <!-- space in between -->
+    <br>
+    <!-- 2nd row of scrable -->
+    <div class="row">
+      <div class="col-md-12">
+
+    <!-- Scrabble image -->
+        <div class="center_text_images">
+          <img class="resize_board" id="the_board" src="img/scrabble/Scrabble_Board_OneLine.png">
+          <div id="board"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add space to make boad and rack seprate -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="highlight_centered">Word: <span id="word">____</span> </div>
+        <div class="highlight_centered">Score: <span id="score">0</span> </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <!-- apsces -->
+    <br><br>
+    <!-- 4th row -->
+    <div class="row">
+      <div class="col-md-12">
+      <!-- scrabble rack -->
+        <div class="center_text_images">
+          <img class="resize_rack" id="the_rack" src="img/scrabble/Scrabble_Rack_flat.png">
+          <div id="rack"></div>
+        </div>
+      </div>
+    </div>
+  </div>   <!--  end of container     -->
+
+<!-- bootstrap plugin for javascip -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- JavaScript modified -->
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- jQuery  plugin -->
+  <script type='text/javascript' src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+  <script type='text/javascript' src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- JavaScript file -->
+  <script type='text/javascript' src="js/scrabble.js"></script>
+  <!-- load haeder and footer when page is ready -->
+  <script>
+    /*
+        this code is fom stackoverflow to load html doc andn div
+        https://learn.jquery.com/using-jquery-core/document-ready/
+        https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
+    */
+    $( document ).ready(function()
+    {
+        $("#NavBarHeader").load("html/navbar.html");
+        $("#TheFooter").load("html/footer.html");
+        load_scrabble_pieces();     // 7 random scrablle tiles
+        load_droppable_targets();   // load 15 targets
+    });
+  </script>
+</body>
+</html>
